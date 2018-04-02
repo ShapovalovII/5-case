@@ -1,0 +1,52 @@
+#include"stdafx.h"
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
+
+int main() {
+
+	int a;
+	do {
+		
+		cout << "Select number:" << endl;
+		cout << "1-case\n2-case\n3-case\n4-case\n5-case(Exit)" << endl;
+		cout << "Your choice: ";
+		cin >> a;
+
+		system("cls");   // очистка экрана
+		cout << "Your previous choice(" << a << "-case): ";
+		switch (a)
+		{
+		case 1: {
+			cout << "Hello" << endl;
+			break;
+		}
+		case 2: {
+			cout << "How are you?" << endl;
+			break;
+		}
+		case 3: {
+			cout << "Where are you?" << endl;
+			break;
+		}
+		case 4: {
+			cout << "Good moning" << endl;
+			break;
+		}
+		case 5: {
+			cout << "Completion of work" << endl;
+			break;
+		}
+		default:
+			cout << "Did not mean the value!" << endl;
+			break;
+		}
+		
+	} while (a != 5 && a < 5);   // если нужно чтоб только при "Exit",завершалась программа убрать(а<5)
+
+	
+
+	system("pause");
+	return 0;
+}
